@@ -1,0 +1,35 @@
+<div class="container-fluid" *ngIf="gallery">
+	<div class="row">
+		<div class="col-md-6 product-container">
+			<div class="product-display">
+				<div class="product-image-container">
+					<!-- Product images go here -->
+					<div *ngFor="let customization of gallery.customizations;let i=index" [ngStyle]="{'z-index': 1 + i}" class="product-image">
+						<div *ngFor="let option of customization.options;let j=index" [ngClass]="{'imageVisible': customization.selected.id == 'canvas-' + i + '-' + j, 'imageHidden': customization.selected.id != 'canvas-' + i + '-' + j}" #productImage id="canvas-{{i}}-{{j}}" class="product-image" [ngStyle]="{'background-image': 'url(' + option.imagePath + ')'}" style="background-size:contain; background-repeat: no-repeat;" alt="Tuotekuva"></div>
+					</div>
+
+					<!--<div *ngFor="let customization of gallery.customizations;let i=index" #productImage id="canvas-{{i}}" class="product-image" [ngStyle]="{'background-image': 'url(' + customization.selected.image + ')'}" style="background-size:contain; background-repeat: no-repeat;" alt="Tuotekuva"></div>-->
+
+					<!--<div *ngFor="let customization of gallery.customizations; let i=index" class="product-image" [ngStyle]="{'background-image': 'url(' + customization.selected.image + ')'}" style="background-size:contain; background-repeat: no-repeat;" alt="Tuotekuva"></div>-->
+				</div>
+				<p class="product-name" id="product-name">{{gallery.header}} </p>
+			</div>
+		</div>
+		<div class="col-md-6 product-container">
+			<!-- Generate options -->
+			<div *ngFor="let customization of gallery.customizations; let i=index" class="product-customization">
+				<p class="product-customization-title">{{gallery.customizations[i].title}} </p>
+				<p class="product-customization-subtitle">{{gallery.customizations[i].selected.name}} </p>
+				<div class="btn-group" data-toggle="buttons">
+					<label *ngFor="let option of gallery.customizations[i].options; let j=index" #thumb class="btn product-customization-btn col-md-2" [ngClass]="{active: j == 0, nonactive: j != 0}" (click)="changeCustomization($event ,{which: i, index: j})">
+						<div class="product-thumb-frame">
+							<div [ngStyle]="{'background-image': 'url(' + option.thumbPath + ')'}" style="background-size: contain; background-repeat: no-repeat;" class="product-thumb"></div>
+						</div>
+				    	<input class="product-thumb-frame" type="radio" name="options" id="option{{j}}" autocomplete="off" checked>
+			  		</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button *ngIf="!nav.hidden && isOwner" [routerLink]="['/galleryedit', gallery.gallery_id]" class="btn btn-secondary btn-gallery-edit" style="margin-top: 20px;">Muokkaa galleriaa</button>
+</div>

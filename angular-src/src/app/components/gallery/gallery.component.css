@@ -1,0 +1,211 @@
+.product-container {
+  overflow: hidden;
+}
+
+.product-display {
+}
+
+.product-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image-container:before{
+  content: "";
+  display: block;
+  padding-top: 100%;  /* initial ratio of 1:1*/
+  padding-top: calc(9/16 * 100%); /* aspect ratio 16:9 */
+  min-width: 50px;
+}
+
+.product-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-size: contain;
+
+  /* Force hardware acceleration. */
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000;
+
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+
+  -moz-transform: translate3d(0, 0, 0);
+  -moz-backface-visibility: hidden;
+  -moz-perspective: 1000;
+
+  -ms-transform: translate3d(0, 0, 0);
+  -ms-backface-visibility: hidden;
+  -ms-perspective: 1000;
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+
+  width: 100%;
+  height: 100%;
+}
+
+.product-name {
+  font-size: 175%;
+}
+
+.product-customization {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.product-customization-title {
+  font-size: 150%;
+}
+
+.product-customization-subtitle {
+  font-size: 125%;
+}
+
+.product-customization-btn {
+  position: relative;
+  padding: 0;
+  background: none;
+  border: 1px solid #CCC;
+  margin: 5px;
+  border-radius: 50%;
+  overflow: hidden;
+  outline: none;
+  background-color: #F8F8F8;
+}
+
+.product-customization-btn:focus {
+  border-color: #666;
+}
+
+.product-customization-btn:before{
+  content: "";
+  display: block;
+  padding-top: 100%;  /* initial ratio of 1:1*/
+  min-width: 50px;
+}
+
+.product-thumb-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.product-thumb {
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #eee;
+
+  /* Center the image vertically. */
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
+
+.btn-group, .btn-group-vertical {
+    width: 100%;
+}
+
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-radius: 50%;
+}
+
+.btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+    border-radius: 50%;
+}
+
+.btn-group>.btn:last-child:not(:first-child), .btn-group>.dropdown-toggle:not(:first-child) {
+    border-radius: 50%;
+}
+
+.focus {
+  outline: none !important;
+}
+
+.btn:active {
+    outline: 0;
+    background-image: none;
+}
+
+.btn.active {
+    animation: rise 0.1s ease-in-out 0s 1 normal forwards;
+}
+
+.btn.nonactive {
+    animation: fall 0.1s ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes rise {
+  0% {
+    background-color: #F8F8F8;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.225)
+  }
+  100% {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px 2px rgba(0,0,0,0.14), 0 1px 10px 2px rgba(0,0,0,0.12), 0px 8px 6px -2px rgba(0,0,0,0.2);
+  }
+}
+
+@keyframes fall {
+  0% {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px 2px rgba(0,0,0,0.14), 0 1px 10px 2px rgba(0,0,0,0.12), 0px 8px 6px -2px rgba(0,0,0,0.2);
+  }
+  100% {
+    background-color: #F8F8F8;
+    box-shadow: 0 1px 2px 1px rgba(0,0,0,0.07), 0 0.5px 5px 1px rgba(0,0,0,0.06), 0px 4px 3px -4px rgba(0,0,0,0.1);
+  }
+}
+
+.btn-gallery-edit {
+    clear: both;
+}
+
+.imageVisible {
+  z-index: 999;
+  animation: show 0.1s ease-in-out 0s 1 normal forwards;
+ 
+}
+
+.imageHidden {
+  z-index: 1;
+  animation: hide 0.11s ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+   
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}

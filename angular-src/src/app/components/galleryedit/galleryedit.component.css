@@ -1,0 +1,215 @@
+.wrap {
+	margin-bottom: 15px;
+}
+
+.customization {
+    background-color: #FEFEFE;
+	/*border: 1px solid #EEE;*/
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 25px;
+    margin-top: 25px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.07), 0 1px 5px 0 rgba(0,0,0,0.06), 0 3px 1px -2px rgba(0,0,0,0.1);
+}
+
+.option {
+    background-color: #FDFDFD;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 20px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.07), 0 1px 5px 0 rgba(0,0,0,0.06), 0 3px 1px -2px rgba(0,0,0,0.1);
+}
+
+.custom-input {
+    background-color: #FFF;
+}
+
+.form-control {
+	border: 1px solid #CCC;
+}
+
+.customization-btn {
+	margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+*, ::after, ::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.upload-container {
+    position: relative;
+    background-size: contain;
+    height: 185px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    border: 2px #eee dashed;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.upload-container-thumb {
+    position: relative;
+    background-size: contain;
+    height: 100px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    border: 2px #eee dashed;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.upload-allowed {
+    /*border: 2px #6f6 dashed;*/
+    border: 2px #666 dashed;
+}
+
+.upload-disallowed {
+    animation: flash 0.5s linear 0s 1 normal;
+    /*border: 2px #faa dashed;*/
+}
+
+.upload-hascontent {
+    border-color: #CCC;
+    /*border: 2px #ccc dashed;*/
+}
+
+@keyframes flash {
+    0%, 50%, 100% {
+       border-color: #f66;
+    }
+    25%, 75% {
+       border-color: #eee;
+    }
+}
+
+.flash {
+animation-name: flash;
+}
+
+.image-preview {
+    position: absolute;
+    float: left;
+    background-size: contain;
+    height: 169px;
+    width: 300px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+}
+
+.thumb-preview {
+    position: absolute;
+    float: left;
+    background-size: contain;
+    height: 85px;
+    width: 85px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+}
+
+.image-preview-name {
+    font-style: italic;
+    color: #d7d7d7;
+}
+
+.upload-input {
+    /*position: absolute;*/
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /*background: radial-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));*/
+    /*background-color: rgba(255, 255, 255, 0.55);*/
+}
+
+.upload-icon {
+    width: 100%;
+    height: 80px;
+    fill: #777;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.upload-icon-thumb {
+    width: 100%;
+    height: 40px;
+    fill: #777;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.upload-label {
+    max-width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 125%;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.upload-label-thumb {
+    max-width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 125%;
+    height: 100%;
+    padding: 5px 0;
+}
+
+.upload-label:hover strong, .upload-label-thumb:hover strong {
+    color: #999;
+}
+
+label {
+    font-weight: normal;
+}
+
+.upload-remove {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.9);
+    border: 0px solid transparent;
+    font-size: 200%;
+    color: #fff;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    outline: none;
+    /*box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.125);*/
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+}
+
+.gallery-embed-link {
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #fafafa;
+    width: fit-content;
+    border-radius: 4px;
+    /*resize: none;*/
+    min-width: 50%;
+}
+
+.info-label {
+    float: left;
+}
+
+.info-button {
+    float: right;
+    cursor: pointer;
+    outline: none;
+}
