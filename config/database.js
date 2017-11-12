@@ -1,4 +1,11 @@
+const db_name = 'gallery';
+const db_url = 'mongodb://localhost:27017/';
+
+if (process.env.OPENSHIFT_MONGODB_DB_URL){
+  db_url = process.env.OPENSHIFT_MONGODB_DB_URL;
+}
+
 module.exports = {
-	database: 'mongodb://localhost:27017/gallery',
+	database: db_url + db_name,
 	secret: 'yoursecret'
 }

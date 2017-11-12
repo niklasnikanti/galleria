@@ -69,7 +69,10 @@ const galleries = require('./routes/galleries');
 const uploads = require('./routes/uploads');
 
 //Port Number
-const port = 3000;
+const port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
+
+// IP address
+const ip = process.env.OPENSHIFT_NODEJS_IP || '192.168.0.150';
 
 // CORS Middleware
 app.use(cors());
@@ -105,12 +108,19 @@ app.get('*', (req, res) => {
 });
 
 module.exports.destination = destination;
-//module.exports.storage = storage;
 module.exports.fileUpload = fileUpload;
 module.exports.uploadSizeLimit = uploadSizeLimit;
-//module.exports.checkFileType = checkFileType;
 
-// Start Server
+
+// Start Server PUBLIC ONLY
+app.listen(port, ip, () => {
+	console.log('Server started on ' + ip + ':' + port);
+});
+
+
+// Start Server LOCAL DEV ONLY
+/*
 app.listen(port, () => {
 	console.log('Server started on port ' + port);
 });
+*/
