@@ -2895,7 +2895,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 // NgClass on SVG elements
 // Needed for: IE10, IE11
 // import 'classlist.js';
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/polyfills.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/polyfills.js.map
 
 /***/ }),
 /* 402 */,

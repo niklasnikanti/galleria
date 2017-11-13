@@ -19,7 +19,7 @@ const storage = multer.diskStorage({
 	destination: destination,
 	filename: function(req, file, cb) {
 		//console.log(req.headers.img_id);
-		cb(null, /*file.fieldname*/+ Date.now() + '-' + req.headers.img_id + path.extname(file.originalname));
+		cb(null, /*file.fieldname+*/ Date.now() + '-' + req.headers.img_id + path.extname(file.originalname));
 	}
 });
 
@@ -112,13 +112,13 @@ module.exports.fileUpload = fileUpload;
 module.exports.uploadSizeLimit = uploadSizeLimit;
 
 
-// Start Server PUBLIC ONLY
+// Start Server PUBLIC
 app.listen(port, ip, () => {
 	console.log('Server started on ' + ip + ':' + port);
 });
 
 
-// Start Server LOCAL DEV ONLY
+// Start Server LOCAL DEV
 /*
 app.listen(port, () => {
 	console.log('Server started on port ' + port);

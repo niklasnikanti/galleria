@@ -72,7 +72,7 @@ var GalleryService = (function () {
     return GalleryService;
     var _a, _b;
 }());
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/gallery.service.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/gallery.service.js.map
 
 /***/ }),
 
@@ -95,8 +95,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 // Provides the location of the server root.
 var RootService = (function () {
     function RootService() {
-        this.port = 3000;
-        this.root = 'http://' + window.location.hostname + ':' + this.port + '/';
+        this.port = 8080;
+        this.root = ''; //'http://' + window.location.hostname + ':' + this.port + '/';
         //console.log(window.location);
         console.log(this.root);
     }
@@ -106,7 +106,7 @@ var RootService = (function () {
     ], RootService);
     return RootService;
 }());
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/root.service.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/root.service.js.map
 
 /***/ }),
 
@@ -139,7 +139,7 @@ var NavbarService = (function () {
     ], NavbarService);
     return NavbarService;
 }());
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/navbar.service.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/navbar.service.js.map
 
 /***/ }),
 
@@ -203,7 +203,7 @@ var UploadService = (function () {
     return UploadService;
     var _a, _b;
 }());
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/upload.service.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/upload.service.js.map
 
 /***/ }),
 
@@ -244,7 +244,7 @@ var ValidateService = (function () {
     ], ValidateService);
     return ValidateService;
 }());
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/validate.service.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/validate.service.js.map
 
 /***/ }),
 
@@ -327,7 +327,7 @@ var AuthService = (function () {
     return AuthService;
     var _a, _b;
 }());
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/auth.service.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/auth.service.js.map
 
 /***/ }),
 
@@ -362,7 +362,7 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["enableProdMode"])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/main.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/main.js.map
 
 /***/ }),
 
@@ -396,7 +396,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/app.component.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/app.component.js.map
 
 /***/ }),
 
@@ -504,7 +504,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/app.module.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/app.module.js.map
 
 /***/ }),
 
@@ -603,7 +603,7 @@ var GalleriesComponent = (function () {
     return GalleriesComponent;
     var _a, _b, _c, _d, _e;
 }());
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/galleries.component.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/galleries.component.js.map
 
 /***/ }),
 
@@ -711,7 +711,7 @@ var GalleryComponent = (function () {
     return GalleryComponent;
     var _a, _b, _c, _d, _e;
 }());
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/gallery.component.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/gallery.component.js.map
 
 /***/ }),
 
@@ -1286,7 +1286,7 @@ var GalleryeditComponent = (function () {
     return GalleryeditComponent;
     var _a, _b, _c, _d, _e, _f;
 }());
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/galleryedit.component.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/galleryedit.component.js.map
 
 /***/ }),
 
@@ -1325,7 +1325,7 @@ var HomeComponent = (function () {
     return HomeComponent;
     var _a;
 }());
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/home.component.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/home.component.js.map
 
 /***/ }),
 
@@ -1393,7 +1393,7 @@ var LoginComponent = (function () {
     return LoginComponent;
     var _a, _b, _c;
 }());
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/login.component.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/login.component.js.map
 
 /***/ }),
 
@@ -1451,7 +1451,7 @@ var NavbarComponent = (function () {
     return NavbarComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/navbar.component.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/navbar.component.js.map
 
 /***/ }),
 
@@ -1500,7 +1500,7 @@ var ProfileComponent = (function () {
     return ProfileComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/profile.component.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/profile.component.js.map
 
 /***/ }),
 
@@ -1579,7 +1579,7 @@ var RegisterComponent = (function () {
     return RegisterComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/register.component.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/register.component.js.map
 
 /***/ }),
 
@@ -1624,7 +1624,7 @@ var AuthGuard = (function () {
     return AuthGuard;
     var _a, _b;
 }());
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/auth.guard.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/auth.guard.js.map
 
 /***/ }),
 
@@ -1640,7 +1640,7 @@ var AuthGuard = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/meanauthapp/angular-src/src/environment.js.map
+//# sourceMappingURL=F:/Projects/Rouhia/Avaroom/productCustomizer/galleria/angular-src/src/environment.js.map
 
 /***/ }),
 
