@@ -111,16 +111,16 @@ module.exports.destination = destination;
 module.exports.fileUpload = fileUpload;
 module.exports.uploadSizeLimit = uploadSizeLimit;
 
-
+/*
 // Start Server PUBLIC
 app.listen(port, ip, () => {
 	console.log('Server started on ' + ip + ':' + port);
 });
+*/
 
 
 // Start Server LOCAL DEV
-/*
 app.listen(port, () => {
 	console.log('Server started on port ' + port);
 });
-*/
+
